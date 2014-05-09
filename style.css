@@ -1,0 +1,460 @@
+/*
+Theme Name: Blog Meus Fetiches
+Theme URI: http://www.meusfetiches.com/
+Description: Template criado para o blog Meus Fetiches, todos os direitos reservados.
+Version: 1.0
+Tags: fetiches, erotico, blog, ifwebs, if, web, studio,
+Author: Emerson Nunes
+Author URI: http://www.ifwebs.com/
+*/
+
+*{padding:0;margin:0;text-decoration:none;text-rendering: optimizeLegibility;font-family: 'Open Sans', sans-serif;color: #444444;}
+a{color: #831009}
+body{width:100%;background-image:url(images/background.jpg);}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'snell_roundhandregular';
+    src: url('css/fonts/snellroundhand-webfont.eot');
+    src: url('css/fonts/snellroundhand-webfont.eot?#iefix') format('embedded-opentype'),
+        url('css/fonts/snellroundhand-webfont.woff') format('woff'),
+        url('css/fonts/snellroundhand-webfont.ttf') format('truetype'),
+        url('css/fonts/snellroundhand-webfont.svg#snell_roundhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'snell_roundhandbold';
+    src: url('css/fonts/snellroundhand-bold-webfont.eot');
+    src: url('css/fonts/snellroundhand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('css/fonts/snellroundhand-bold-webfont.woff') format('woff'),
+        url('css/fonts/snellroundhand-bold-webfont.ttf') format('truetype'),
+        url('css/fonts/snellroundhand-bold-webfont.svg#snell_roundhandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'snell_roundhandblack';
+    src: url('css/fonts/snellroundhand-black-webfont.eot');
+    src: url('css/fonts/snellroundhand-black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('css/fonts/snellroundhand-black-webfont.woff') format('woff'),
+        url('css/fonts/snellroundhand-black-webfont.ttf') format('truetype'),
+        url('css/fonts/snellroundhand-black-webfont.svg#snell_roundhandblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'athelasregular';
+    src: url('css/fonts/athelas-regular-webfont.eot');
+    src: url('css/fonts/athelas-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('css/fonts/athelas-regular-webfont.woff') format('woff'),
+        url('css/fonts/athelas-regular-webfont.ttf') format('truetype'),
+        url('css/fonts/athelas-regular-webfont.svg#athelasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'athelasitalic';
+    src: url('css/fonts/athelas-italic-webfont.eot');
+    src: url('css/fonts/athelas-italic-webfont.eot?#iefix') format('embedded-opentype'),
+        url('css/fonts/athelas-italic-webfont.woff') format('woff'),
+        url('css/fonts/athelas-italic-webfont.ttf') format('truetype'),
+        url('css/fonts/athelas-italic-webfont.svg#athelasitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.clear{clear:both;}
+.content{width:1100px;margin:0 auto;}
+
+/*Header*/
+header{
+    width: 100%;
+    min-width: 1100px;
+    clear: both;
+    margin-bottom: -20px;
+}
+nav{
+    background-image: url("images/bg.jpg");
+    clear: both;
+    height: 35px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 999;
+}
+nav ul{float:left;width: 800px;height: 35px;}
+nav li{display: inline;padding: 0 10px 0 28px;line-height: 35px;}
+nav li:hover{background: url("images/mask.png") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
+             transition: ease-in-out 0.2s;
+             -moz-transition: ease-in-out 0.2s;
+             -webkit-transition: ease-in-out 0.2s;
+             -o-transition: ease-in-out 0.2s;}
+nav li a{font-family: 'athelasitalic';color: #ffffff;font-size: 18px;letter-spacing: 2px;font-weight: 100;}
+nav button{background: none;border:none;float: right;width: 35px;height: 35px;cursor: pointer;}
+.stage {
+    background-size: 100% auto;
+    bottom: 0;
+    height: 30px;
+    left: 891px;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: -35px;
+    transition: all 1s ease-out 0s;
+    width: 250px;
+    z-index: 1;
+    display: none;
+}
+.stage:target{
+    display: block;
+    transition: all 1s ease-out 0s;
+}
+.sb-search-input{
+    border: 1px solid #831009;
+    height: 28px;
+    position: relative;
+    top: -8px;
+    width: 190px;
+    text-indent: 10px;
+    font-size: 14px;
+}
+.sidesubmit{
+    background-color: #831009;
+    height: 20px;
+    left: -6px;
+    padding: 5px;
+    position: relative;
+    top: 2px;
+    width: 20px;
+}
+section.content{
+    padding-top: 7px;
+}
+.logo img{
+    margin: 20px 0;
+}
+.ads1{
+    width: 728px;
+    height: 90px;
+    float: right;
+    margin:20px 0;
+}
+.slider{
+    width: 1100px;
+    height: 350px;
+    background-color: #000000;
+    margin:-10px 0 0 0;
+}
+hr{height: 8px;width: 100%;border:none;background-image: url(images/bg.jpg);margin: 10px 0;}
+.hr-single{
+    height: 3px;
+}
+.wrapper{
+    width: 730px;
+    float: left;
+    color: #444444;
+    overflow: hidden;
+}
+.wrapper li{
+    display: block;
+    width: 100%;
+    height: 220px;
+    border-style: solid; border-width: 0px 0px 2px; -moz-border-image: url(images/bg.jpg) 0 0 5; -webkit-border-image: url(images/bg.jpg) 0 0 5 repeat; -o-border-image: url(images/bg.jpg) 0 0 5 repeat; border-image: url(images/bg.jpg) 0 0 5 repeat;
+}
+.thumbs{
+    width: 180px;
+    height: 180px;
+    margin: 0 20px 20px 20px;
+    float: left;
+    overflow:hidden;
+}
+.thumbs img{
+    width:180px;
+    height: 180px;
+}
+.thumbs2 img{
+    max-width:320px;
+    max-height: 250px;
+    float: left;
+    margin: 5px 15px 5px 10px;
+}
+.contPost{
+    width: 510px;
+    height: 180px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+}
+.contPost-single{
+    width: 730px;
+    margin: 20px 0 -35px 0;
+    overflow: hidden;
+}
+.contPost-single h2{
+    background-image: url("images/bg.jpg");
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: normal;
+    padding: 10px;
+    width: 710px;
+}
+.contPost-single h2 > span{
+    color: #FFFFFF;
+    font-family: 'athelasitalic';
+    font-size:28px;
+    line-height: 14px;
+
+}
+.contPost-single h2 > a span{
+    color: #FFFFFF;
+    font-family: 'athelasitalic';
+    font-size:24px;
+    line-height: 16px;
+
+}
+.contPost h2{
+    background-image: url("images/bg.jpg");
+    font-size: 20px;
+    font-weight: 100;
+    height: 35px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 5px 10px;
+    width: 94%;
+}
+.contPost h2 span{
+    color: #FFFFFF;
+    font-family: 'athelasitalic';
+    font-size: 18px;
+}
+.contPost h2 > a span{
+    color: #FFFFFF;
+    font-family: 'athelasitalic';
+    font-size: 18px;
+}
+.descPost{
+    font-size: 13px;
+    height: 62px;
+    margin: 8px 0 10px 0;
+    overflow: hidden;
+    text-align: justify;
+    text-indent: 15px;
+}
+.descPost::first-letter{
+    font-weight:bold;
+    font-size: 18px;
+    margin-right: 2px;
+}
+.descPost span{position: absolute;}
+.catPost a{color: #444444;font-weight: normal;}
+.catPost a:hover{text-decoration: underline;}
+.catPost{
+    margin: 10px 0 0 0;
+    color: #831009;
+    font-weight: bold;
+    font-size: 14px;
+}
+.autorPost a{color: #444444;font-weight: normal;}
+.autorPost a:hover{text-decoration: underline;}
+.autorPost span{font-weight: bold;color: #831009;}
+.autorPost{
+    margin: 10px 10px 0 0;
+    color: #444444;
+    font-weight: normal;
+    font-size: 14px;
+    float: left;
+}
+time{
+    float: left;
+    margin: 10px 20px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #831009;
+    position: relative;
+    left: 10px;
+}
+.descPost-single span{position: absolute;}
+.catPost-single a{color: #444444;font-weight: normal;}
+.catPost-single a:hover{text-decoration: underline;}
+.catPost-single{
+    margin: 10px 0 0 0;
+    color: #831009;
+    font-weight: bold;
+    font-size: 16px;
+}
+.autorPost-single a{color: #444444;font-weight: normal;}
+.autorPost-single a:hover{text-decoration: underline;}
+.autorPost-single span{font-weight: bold;color: #831009;}
+.autorPost-single{
+    margin: 10px 10px 0 0;
+    color: #444444;
+    font-weight: normal;
+    font-size: 16px;
+    float: left;
+}
+.conteudo-single{
+    margin-bottom: 50px;
+    clear: both;
+}
+.conteudo-single iframe{
+    width: 100% !important;
+    margin:12px 0;
+}
+.conteudo-single p{
+    line-height: normal;
+    margin:10px 0;
+}
+.social{
+    width: 510px;
+    height: 30px;
+    float: right;
+    clear: both;
+    margin-top: -50px;
+}
+.social ul{height: 30px;}
+.social li{display: inline;
+           line-height: 30px;
+           height: 30px;width: 120px;
+           text-align: center;
+           border:none;
+}
+.social-single{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 18px;
+    clear: both;
+}
+.social-single ul{
+    height: 30px;
+    width: 510px;
+    float: right;
+    margin-top: 8px;
+}
+.social-single li{
+    display: inline;
+    line-height: 30px;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    border:none;
+}
+.social-single h3{
+    font-family: 'athelasitalic';
+    font-size: 30px;
+    float: left;
+    color: #831009;
+}
+.navegacao{
+    width: 730px;
+    margin-top: 30px;
+}
+aside{
+    float: left;
+    margin: 5px 0 0 32px;
+    overflow: hidden;
+    width: 335px;
+}
+.boxSidebar{
+    background-color: #FFFFFF;
+    border: 1px solid #831009;
+    float: left;
+    margin: 15px 10px 10px 0;
+    overflow: hidden;
+    width: 330px;
+}
+.boxSidebar h1{
+    font-family: 'athelasitalic';
+    text-align: left;
+    color: #fff;
+    font-size: 28px;
+    padding: 10px 15px 0;
+    width: 100%;
+    background-image: url(images/bg.jpg);
+}
+.contSide{
+    width: 300px;
+    overflow: hidden;
+    margin: 15px auto;
+}
+footer{
+    background-image: url(images/bg.jpg);
+    margin: 20px 0 0 0;
+    position: relative;
+    bottom: -42px;
+    width: 100%;
+    min-width: 1100px;
+    height: 150px;
+    overflow: hidden;
+}
+.menuFooter{
+    background-image: none;
+    clear: none;
+    float: left;
+    height: 35px;
+    left: 5px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 750px;
+    box-shadow: none;
+}
+.menuFooter ul{
+    width: 750px;
+    height: 35px;
+}
+.menuFooter li{
+    background: url("images/mask.png") no-repeat scroll 1px -50px rgba(0, 0, 0, 0);
+    border-right: medium none;
+    display: inline;
+    line-height: 35px;
+    padding: 0 10px 0 30px;
+    transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+.menuFooter li:hover{
+    background: url("images/mask.png") no-repeat scroll 3px 7px rgba(0, 0, 0, 0);
+    transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+.menuFooter li a{font-family: 'athelasitalic';color: #ffffff;font-size: 18px;letter-spacing: 2px;font-weight: 100;}
+.logoFooter{
+    float: left;
+    width: 200px;
+    height: 115px;
+    margin: 30px 0 0 0;
+}
+.ifwebs{
+    background: url("images/ifwebs.png") no-repeat scroll 0 -74px rgba(0, 0, 0, 0);
+    float: left;
+    height: 73px;
+    position: relative;
+    top: 20px;
+    width: 60px;
+}
+.ifwebs a{
+    float: left;
+    height: 73px;
+    width: 60px;
+}
+.ifwebs:hover{
+    background: url("images/ifwebs.png") no-repeat scroll 0 1px rgba(0, 0, 0, 0);
+}
+.copy{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background:rgba( 77, 10, 5, 0.7);
+    color: #ffffff;
+    font-size: 12px;
+    position:relative;
+    top: -30px;
+}
+
